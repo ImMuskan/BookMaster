@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg customnav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img src="images/img1.jpg" class="logo">
+                <a class="navbar-brand" href="#">BOOKS</a>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 in" type="search" id="searchId" placeholder="Search a book by ID"
+                    aria-label="Search">
+                <button class="btn" type="button" onclick="searchBook()">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div>
+        <div class="tab" id="tab">
+            <div class="r1" id="r1">
+                <button class="adduser" style="margin-bottom: 20px;" onclick="showAddBookForm()">Add Book</button>
+            </div>
+            <div id="addBookForm" style="display: none;">
+                <h1 id="h1">ADD NEW BOOK</h1>
+                <div class="form">
+                    <form>
+                        <table align="center" cellpadding="15" cellspacing="5">
+                            <tr>
+                                <td><label>ID</label></td>
+                                <td><input type="number" placeholder="Enter Id" id="bookId" required></td>
+                            </tr>
+                            <tr>
+                                <td><label>Title</label></td>
+                                <td><input type="text" placeholder="Enter title" id="bookTitle" required></td>
+                            </tr>
+                            <tr>
+                                <td><label>Author</label></td>
+                                <td><input type="text" placeholder="Enter author" id="bookAuthor" required></td>
+                            </tr>
+                            <tr>
+                                <td><label>Genre</label></td>
+                                <td><input type="text" placeholder="Enter genre" id="bookGenre" required></td>
+                            </tr>
+                            <tr>
+                                <td><label>Publication year</label></td>
+                                <td><input type="text" placeholder="Enter publication year" id="bookYear" required></td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <button class="btn1" onclick="addBook()" style="margin-bottom: 5px;">ADD
+                                        BOOK</button>
+                                </td>
+                                <td><button class="btn1" onclick="hideAddBookForm()">Cancel</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div id="updateBookForm" style="display: none;">
+                <h1 id="h2">UPDATE BOOK</h1>
+                <div class="form">
+                    <form>
+                        <table align="center" cellpadding="15" cellspacing="5">
+                            <tr>
+                                <td><label>Title</label></td>
+                                <td><input type="text" placeholder="Enter title" id="booktitle"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Author</label></td>
+                                <td><input type="text" placeholder="Enter author" id="bookauthor"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Genre</label></td>
+                                <td><input type="text" placeholder="Enter genre" id="bookgenre"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Publication year</label></td>
+                                <td><input type="text" placeholder="Enter publication year" id="bookyear"></td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <button class="btn1" id="btn2" style="margin-bottom: 5px;">UPDATE BOOK</button>
+                                </td>
+                                <td><button class="btn1" onclick="hideAddBookForm()">Cancel</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+            <div class="sbook" id="sbook" style="display: none;">
+                <div>
+                    <button class="cut" onclick="display()">x</button>
+                </div>
+                <div class="sear" id="sear">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

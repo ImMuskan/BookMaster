@@ -1,0 +1,176 @@
+.customnav {
+    background-image: linear-gradient(to right, rgb(227, 142, 227), white);
+    display: flex;
+    align-items: center;
+
+}
+
+.btn {
+    background-color: rgb(113, 5, 113);
+    color: white;
+}
+
+.btn:hover {
+    background-color: plum;
+    color: black;
+    border: 0px solid;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(98, 2, 98);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    font-size: 25px;
+    border: 5px solid rgb(188, 137, 188);
+    border-radius: 5px;
+}
+
+input {
+    background-color: white;
+    padding: 8px;
+    font-size: 20px;
+    border: 0px solid;
+    border-radius: 3px;
+}
+
+.btn1 {
+    background-color: rgb(213, 139, 213);
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    border: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+table {
+    width: 100%;
+}
+
+input {
+    width: 96%;
+}
+
+.btn1:hover {
+    background-color: rgb(243, 205, 243);
+    color: rgb(94, 9, 94);
+
+}
+
+.logo {
+    max-height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+body {
+    background-image: url('./images/img2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainele {
+    margin: 1%;
+    padding: 8px;
+}
+
+.adduser {
+    font-size: 25px;
+    background-color: rgb(243, 205, 243);
+    color: rgb(94, 9, 94);
+    font-weight: bold;
+    border: 0px solid;
+    padding: 10px;
+}
+
+.adduser img {
+    margin: 5px;
+    max-height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-color: antiquewhite;
+}
+
+.books-table th{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(51, 3, 51);
+    font-weight: 600;
+    border: 3px solid purple;
+}
+.books-table td{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(102, 23, 102);
+    border: 3px solid purple;
+}
+.books-table{
+    padding: 10px;
+    text-align: center;
+}
+.books{
+    margin: 10px;
+}
+#td6,#td7{
+    border: 0px ;
+    cursor: pointer;
+}
+.fas{
+    margin: 10px;
+}
+#td6:hover,#td7:hover{
+    background-image: linear-gradient(to right, rgb(227, 142, 227), white);;
+    border-radius: 5px;
+    margin: 3px;
+}
+.stable th{
+    font-size: 40px;
+}
+.stable td{
+    font-size: 30px;
+}
+.sbook{
+    padding: 20px;
+    background-image: linear-gradient(to right,rgb(35, 1, 35),white);
+    border-radius: 10px;
+}
+.sbook{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    font-weight: bold;
+    margin-bottom: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: rgb(214, 195, 220);
+}
+.cut{
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 3px;
+}
